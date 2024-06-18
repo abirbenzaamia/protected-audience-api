@@ -8,7 +8,7 @@ const interestGroup = {
     // This script must have the same origin as the owner directly above
     // An example of bidding logic is provided in the next section.
     biddingLogicUrl: "https://protected-audience-api-dsp.onrender.com/bidding-logic.js",
-    joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
+    // joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
     // Protected Audience API requires that any ad that could be returned by bidding logic is listed here.
     // For this example there is only one ad which you will set up in Step 4.2
     ads: [{
