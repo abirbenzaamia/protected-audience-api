@@ -3,7 +3,7 @@ const interestGroup = {
 
     // This should be the origin where this file will be hosted
     // This should be the same origin as biddingLogicUrl below
-    ownerOrigin: "https://protected-audience-api-dsp.onrender.com",
+    owner: "https://protected-audience-api-dsp.onrender.com",
 
     // This script must have the same origin as the owner directly above
     // An example of bidding logic is provided in the next section.
