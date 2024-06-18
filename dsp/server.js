@@ -8,6 +8,8 @@ app.get('/', (req, res) => {
 
 // Serve decision-logic.js and run-ad-auction.js files
 app.use(express.static('./src'))
+app.use(express.static('./ads'))
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
