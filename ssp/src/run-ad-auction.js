@@ -21,7 +21,6 @@ const auctionConfig = {
 async function runAuction(){
   // Run ad auction
   const opaqueUrl = await navigator.runAdAuction(auctionConfig);
-
   // Render ad
   const iframeEl = document.createElement('iframe');
   iframeEl.src = opaqueUrl;
