@@ -27,6 +27,7 @@ const interestGroup = {
     // joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
     // Protected Audience API requires that any ad that could be returned by bidding logic is listed here.
     // For this example there is only one ad which you will set up in Step 4.2
+    joiningOrigin:"https://protected-audience-api-advertiser.onrender.com",
     ads: [{
         renderUrl: "https://protected-audience-api-dsp.onrender.com/ad.html",
     }],
