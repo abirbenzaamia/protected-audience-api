@@ -33,15 +33,15 @@ const interestGroup = {
     }],
 
 };
-const kSecsPerDay = 3600;
-navigator.joinAdInterestGroup(interestGroup, 7 * kSecsPerDay);
+// const kSecsPerDay = 3600;
+// navigator.joinAdInterestGroup(interestGroup, 7 * kSecsPerDay);
 
 
 
+const ONE_WEEK_IN_SECONDS = 60 * 60 * 24 * 7;
 
-// document.addEventListener("DOMContentLoaded", (e) => {
-//     // An interest group expires in 30 days unless it is rejoined.
-//     // You can set a shorter expiration depending on your use case
-//     const kSecsPerDay = 3600;
-//     navigator.joinAdInterestGroup(interestGroup, kSecsPerDay * 24 * 30);
-// });
+const joinInterestGroup = async (dspUrl) => {
+
+
+  navigator.joinAdInterestGroup(interestGroup, ONE_WEEK_IN_SECONDS);
+};
