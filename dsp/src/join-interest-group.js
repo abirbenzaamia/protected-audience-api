@@ -1,17 +1,3 @@
-// const interestGroup = {
-//     owner: 'https://protected-audience-api-dsp.onrender.com',
-//     name: 'custom-bikes',
-//     biddingLogicUrl: "https://protected-audience-api-dsp.onrender.com/bidding-logic.js",
-//     // biddingWasmHelperUrl: ...,
-//     // updateUrl: ...,
-//     // trustedBiddingSignalsUrl: ...,
-//     // trustedBiddingSignalsKeys: ['key1', 'key2'],
-//     // userBiddingSignals: {...},
-//     ads: [bikeAd1, bikeAd2, bikeAd3],
-//     adComponents: [customBike1, customBike2, bikePedal, bikeFrame1, bikeFrame2],
-//   };
-  
-//   navigator.joinAdInterestGroup(interestGroup, 7 * kSecsPerDay);
 
 
 const interestGroup = {
@@ -33,15 +19,15 @@ const interestGroup = {
     }],
 
 };
-// const kSecsPerDay = 3600;
-// navigator.joinAdInterestGroup(interestGroup, 7 * kSecsPerDay);
+const kSecsPerDay = 3600;
+navigator.joinAdInterestGroup(interestGroup, 7 * kSecsPerDay);
 
 
 
-const ONE_WEEK_IN_SECONDS = 60 * 60 * 24 * 7;
+// const ONE_WEEK_IN_SECONDS = 60 * 60 * 24 * 7;
 
-const joinInterestGroup = async (dspUrl) => {
+// const joinInterestGroup = async (dspUrl) => {
 
 
-  navigator.joinAdInterestGroup(interestGroup, ONE_WEEK_IN_SECONDS);
-};
+//   navigator.joinAdInterestGroup(interestGroup, ONE_WEEK_IN_SECONDS);
+// };
