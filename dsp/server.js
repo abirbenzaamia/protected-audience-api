@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const cors = require('cors');
 const port = 3000
 
 app.get('/', (req, res) => {
@@ -9,6 +10,8 @@ app.get('/', (req, res) => {
 // Serve decision-logic.js and run-ad-auction.js files
 app.use(express.static('./src'))
 app.use(express.static('./ads'))
+
+app.use(cors());
 
 app.get('/.well-known/interest-group/permissions', (req, res) => {
   res.json({
