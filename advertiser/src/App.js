@@ -1,21 +1,29 @@
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
+import { Header } from './components/Header';
 
-function App() {
+// import pages
+import Home from './pages/Home';
+import Products from './pages/AllProducts';
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-      {/* <iframe allow='join-ad-interest-group' title='test' height="0" width="0" className='dsp-pixel' src='https://protected-audience-api-dsp.onrender.com'>
-      <script src='https://protected-audience-api-dsp.onrender.com/join-interest-group.js'></script>
-      <script>
-        joinInterestGroup("https://protected-audience-api-dsp.onrender.com");
-        </script>
-      </iframe> */}
-      
-      <h2>Advertiser Product Page</h2>
-      <p>Here is the products</p>
-      </header>
+    <div className='max-w-[1440px] mx-auto bg-white'>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        {/* <Route path='/product/:id' element={<ProductDetails />} /> */}
+        <Route path='/products' element={<Products />} />
+        {/* <Route path='/wishlist' element={<Wishlist />} /> */}
+        {/* <Route path='/user/:userId/verify/:verifyId' element={<UserVerification />} /> */}
+
+        {/* <Route path='*' element={<PageNotFound />} /> */}
+      </Routes>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
