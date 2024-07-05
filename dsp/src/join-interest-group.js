@@ -1,5 +1,5 @@
 
-
+// Define my audience
 const interestGroup = {
     name: "test",
 
@@ -20,7 +20,7 @@ const interestGroup = {
 
 };
 const kSecsPerDay = 3600;
-navigator.joinAdInterestGroup(interestGroup, 7 * kSecsPerDay);
+document.joinAdInterestGroup(interestGroup, 7 * kSecsPerDay);
 
 
 
