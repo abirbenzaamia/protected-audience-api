@@ -16,9 +16,13 @@ const App = () => {
         <Route path='/' element={<Home />} />
         {/* <Route path='/product/:id' element={<ProductDetails />} /> */}
         <Route path='/products' element={<Products />} />
+        <Route path='/sneakers' element={<Products />} />
+        <Route path='/boots' element={<Products />} />
+        <Route path='/sandals' element={<Products />} />
+        <Route path='/loafers' element={<Products />} />
+        <Route path='/heels' element={<Products />} />
         {/* <Route path='/wishlist' element={<Wishlist />} /> */}
         {/* <Route path='/user/:userId/verify/:verifyId' element={<UserVerification />} /> */}
-
         {/* <Route path='*' element={<PageNotFound />} /> */}
       </Routes>
       <Footer />

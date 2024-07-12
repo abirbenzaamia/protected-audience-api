@@ -7,6 +7,7 @@ const Home = () => {
   // React.useEffect(() => {
   //   dispatch(getAllShoe({ page, limit, sort, brand, category, price }));
   // }, [dispatch, page, limit, sort, brand, category, price]);
+  
   return (
     <div className='min-h-[1400px]'>
       <Banner />
