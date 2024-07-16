@@ -10,235 +10,171 @@ import API from "./index";
 //         price
 //     }
 // });
-const data = { 
-    "shoes" : [
-      {
-        "id": 1,
-        "page": 1,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Nike",
-        "category": "Sneakers",
-        "price": 120.00
-      },
-      {
-        "id": 2,
-        "page": 1,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Adidas",
-        "category": "Sneakers",
-        "price": 100.00
-      },
-      {
-        "id": 3,
-        "page": 1,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Puma",
-        "category": "Sneakers",
-        "price": 90.00
-      },
-      {
-        "id": 4,
-        "page": 1,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Reebok",
-        "category": "Sneakers",
-        "price": 85.00
-      },
-      {
-        "id": 5,
-        "page": 1,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Under Armour",
-        "category": "Sneakers",
-        "price": 110.00
-      },
-      {
-        "id": 6,
-        "page": 2,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Timberland",
-        "category": "Boots",
-        "price": 150.00
-      },
-      {
-        "id": 7,
-        "page": 2,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Dr. Martens",
-        "category": "Boots",
-        "price": 130.00
-      },
-      {
-        "id": 8,
-        "page": 2,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Columbia",
-        "category": "Boots",
-        "price": 140.00
-      },
-      {
-        "id": 9,
-        "page": 2,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "North Face",
-        "category": "Boots",
-        "price": 160.00
-      },
-      {
-        "id": 10,
-        "page": 2,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Sorel",
-        "category": "Boots",
-        "price": 155.00
-      },
-      {
-        "id": 11,
-        "page": 3,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Birkenstock",
-        "category": "Sandals",
-        "price": 70.00
-      },
-      {
-        "id": 12,
-        "page": 3,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Teva",
-        "category": "Sandals",
-        "price": 65.00
-      },
-      {
-        "id": 13,
-        "page": 3,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Chaco",
-        "category": "Sandals",
-        "price": 75.00
-      },
-      {
-        "id": 14,
-        "page": 3,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Reef",
-        "category": "Sandals",
-        "price": 50.00
-      },
-      {
-        "id": 15,
-        "page": 3,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Crocs",
-        "category": "Sandals",
-        "price": 45.00
-      },
-      {
-        "id": 16,
-        "page": 4,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Gucci",
-        "category": "Loafers",
-        "price": 300.00
-      },
-      {
-        "id": 17,
-        "page": 4,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Cole Haan",
-        "category": "Loafers",
-        "price": 200.00
-      },
-      {
-        "id": 18,
-        "page": 4,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Clarks",
-        "category": "Loafers",
-        "price": 180.00
-      },
-      {
-        "id": 19,
-        "page": 4,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Sperry",
-        "category": "Loafers",
-        "price": 160.00
-      },
-      {
-        "id": 20,
-        "page": 4,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "G.H. Bass",
-        "category": "Loafers",
-        "price": 170.00
-      },
-      {
-        "id": 21,
-        "page": 5,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Christian Louboutin",
-        "category": "Heels",
-        "price": 600.00
-      },
-      {
-        "id": 22,
-        "page": 5,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Jimmy Choo",
-        "category": "Heels",
-        "price": 550.00
-      },
-      {
-        "id": 23,
-        "page": 5,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Manolo Blahnik",
-        "category": "Heels",
-        "price": 500.00
-      },
-      {
-        "id": 24,
-        "page": 5,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Stuart Weitzman",
-        "category": "Heels",
-        "price": 450.00
-      },
-      {
-        "id": 25,
-        "page": 5,
-        "limit": 5,
-        "sort": "popularity",
-        "brand": "Steve Madden",
-        "category": "Heels",
-        "price": 120.00
-      }
-    ]
-  }
+const data = {
+  "shoes": [
+    {
+      "id": 1,
+      "brand": "Timberland",
+      "category": "Boots",
+      "price": 160.00,
+      "description": "Timberland classic waterproof boots for durability and style.",
+      "image_link": "1.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Dr. Martens",
+      "category": "Boots",
+      "price": 140.00,
+      "description": "Dr. Martens leather boots with iconic yellow stitching.",
+      "image_link": "2.jpg"
+    },
+    {
+      "id": 3,
+      "brand": "Columbia",
+      "category": "Boots",
+      "price": 130.00,
+      "description": "Columbia waterproof hiking boots for rugged terrain.",
+      "image_link": "3.webp"
+    },
+    {
+      "id": 4,
+      "brand": "Sorel",
+      "category": "Boots",
+      "price": 180.00,
+      "description": "Sorel insulated winter boots for extreme cold weather.",
+      "image_link": "4.webp"
+    },
+    {
+      "id": 5,
+      "brand": "Gucci",
+      "category": "Loafers",
+      "price": 650.00,
+      "description": "Gucci luxury leather loafers with horsebit detail.",
+      "image_link": "5.avif"
+    },
+    {
+      "id": 6,
+      "brand": "Cole Haan",
+      "category": "Loafers",
+      "price": 200.00,
+      "description": "Cole Haan penny loafers with classic design and comfort.",
+      "image_link": "6.jpg"
+    },
+    {
+      "id": 7,
+      "brand": "Clarks",
+      "category": "Loafers",
+      "price": 100.00,
+      "description": "Clarks comfortable and stylish leather loafers.",
+      "image_link": "7.jpg"
+    },
+    {
+      "id": 8,
+      "brand": "Salvatore Ferragamo",
+      "category": "Loafers",
+      "price": 750.00,
+      "description": "Salvatore Ferragamo premium leather loafers with signature Gancini ornament.",
+      "image_link": "8.webp"
+     },
+    {
+      "id": 9,
+      "brand": "Jimmy Choo",
+      "category": "Heels",
+      "price": 850.00,
+      "description": "Jimmy Choo elegant high heels with a sophisticated design.",
+      "image_link": "9.webp"
+    },
+    {
+      "id": 10,
+      "brand": "Christian Louboutin",
+      "category": "Heels",
+      "price": 950.00,
+      "description": "Christian Louboutin signature red sole stiletto heels.",
+      "image_link": "10.jpg"
+    },
+    {
+      "id": 11,
+      "brand": "Manolo Blahnik",
+      "category": "Heels",
+      "price": 1050.00,
+      "description": "Manolo Blahnik classic pumps with timeless elegance.",
+      "image_link": "11.avif"
+    },
+    {
+      "id": 12,
+      "brand": "Stuart Weitzman",
+      "category": "Heels",
+      "price": 400.00,
+      "description": "Stuart Weitzman comfortable and stylish high heels.",
+      "image_link": "12.webp"
+    },
+    {
+      "id": 13,
+      "brand": "Birkenstock",
+      "category": "Sandals",
+      "price": 120.00,
+      "description": "Birkenstock supportive and comfortable sandals with cork footbed.",
+      "image_link": "13.webp"
+    },
+    {
+      "id": 14,
+      "brand": "Teva",
+      "category": "Sandals",
+      "price": 60.00,
+      "description": "Teva rugged and durable sport sandals for outdoor activities.",
+      "image_link": "14.jpg"
+    },
+    {
+      "id": 15,
+      "brand": "Chaco",
+      "category": "Sandals",
+      "price": 100.00,
+      "description": "Chaco adjustable strap sandals for a custom fit.",
+      "image_link": "15.webp"
+    },
+    {
+      "id": 16,
+      "brand": "Steve Madden",
+      "category": "Sandals",
+      "price": 80.00,
+      "description": "Steve Madden stylish sandals perfect for casual outings.",
+      "image_link": "16.jpg"
+    },
+    {
+      "id": 17,
+      "brand": "Nike",
+      "category": "Sneakers",
+      "price": 130.00,
+      "description": "Nike high-performance sneakers with innovative design.",
+      "image_link": "17.webp"
+    },
+    {
+      "id": 18,
+      "brand": "Adidas",
+      "category": "Sneakers",
+      "price": 110.00,
+      "description": "Adidas stylish and comfortable sneakers for everyday wear.",
+      "image_link": "18.webp"
+    },
+    {
+      "id": 19,
+      "brand": "Puma",
+      "category": "Sneakers",
+      "price": 90.00,
+      "description": "Puma lightweight and breathable sneakers for sports and casual wear.",
+      "image_link": "19.jpg"
+    },
+    {
+      "id": 20,
+      "brand": "Reebok",
+      "category": "Sneakers",
+      "price": 100.00,
+      "description": "Reebok classic sneakers with a retro design and modern comfort.",
+      "image_link": "20.webp"
+    }
+  ]
+}
+
 
 
 
@@ -247,6 +183,15 @@ export function GetAllShoes(){
   }
 
 
+export function GetShoeByCategory(cat){
+  return data.shoes.find(product => product.cat === cat);
+
+}
+
+export function GetShoeById(id){
+  return data.shoes.find(product => product.id === id);
+
+}
 
 
 export const GetTopShoeAPI = () => API.get("/shoesPage/top");

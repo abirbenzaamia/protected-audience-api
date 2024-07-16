@@ -11,9 +11,9 @@ export const initialState = {
     loading: false
 }
 
-export const getAllShoes = createAsyncThunk('Shoe/getAllShoe', async ({ page, limit, sort, brand, category, price }, { rejectWithValue }) => {
+export const getAllShoes = createAsyncThunk('Shoe/getAllShoe', async ({ id, brand, category, price, description, image_link }, { rejectWithValue }) => {
     try {
-        const data = await api.GetAllShoes({ page, limit, sort, brand, category, price });
+        const data = await api.GetAllShoes({ id, brand, category, price, description, image_link});
         //console.log('hhhh')
         //console.log(data)
         return data;
@@ -29,6 +29,25 @@ export const getAllShoes = createAsyncThunk('Shoe/getAllShoe', async ({ page, li
     }
 }
 );
+
+export const getShoeById = createAsyncThunk('Shoe/getShoeById', async (shoeId, { rejectWithValue }) => {
+    try {
+        const { data: { data, message } } = await api.GetShoeById(shoeId);
+        NotifySuccess(message);
+        return data;
+    } catch (error) {
+        if (error?.response?.status >= 400 && error?.response?.status <= 500) {
+            NotifyWarning(error?.response?.data?.message || "Error please  reload page")
+            return rejectWithValue(error?.response?.data?.message || "Error please  reload page");
+        } else {
+            NotifyError(error.message)
+            return rejectWithValue(error.message)
+        }
+    }
+}
+);
+
+// ------------------------------
 
 export const getTopShoe = createAsyncThunk('Shoe/getTopShoe', async (rejectWithValue) => {
     try {
@@ -46,25 +65,8 @@ export const getTopShoe = createAsyncThunk('Shoe/getTopShoe', async (rejectWithV
 }
 );
 
-export const getShoeById = createAsyncThunk('Shoe/getShoeById', async (shoeId) => {
-    return shoeId;
-});
-export const getShoeByIdOnPageLoad = createAsyncThunk('Shoe/getShoeByIdOnPageLoad', async (shoeId, { rejectWithValue }) => {
-    try {
-        const { data: { data, message } } = await api.GetShoeByIdAPI(shoeId);
-        NotifySuccess(message);
-        return data;
-    } catch (error) {
-        if (error?.response?.status >= 400 && error?.response?.status <= 500) {
-            NotifyWarning(error?.response?.data?.message || "Error please  reload page")
-            return rejectWithValue(error?.response?.data?.message || "Error please  reload page");
-        } else {
-            NotifyError(error.message)
-            return rejectWithValue(error.message)
-        }
-    }
-}
-);
+
+
 
 export const createShoe = createAsyncThunk('Shoe/createShoe', async ({ closeModal
     , AddProductData }, { rejectWithValue }) => {

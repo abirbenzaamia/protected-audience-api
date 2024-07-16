@@ -6,10 +6,10 @@ import { getAllShoes } from '../statemanagement/ShoeSlice';
 const ProductPage = () => {
     const dispatch = useDispatch();
     const { shoeData, loading, error } = useSelector((state) => state.shoeDetails);
-    const { page, limit, sort, brand, category, price } = useSelector((state) => state.filterShoes);
+    const { id, brand, category, price, description, image_link } = useSelector((state) => state.filterShoes);
     React.useEffect(() => {
-        dispatch(getAllShoes({ page, limit, sort, brand, category, price }));
-    }, [ dispatch,page, limit, sort, brand, category, price]);
+        dispatch(getAllShoes({ id, brand, category, price, description, image_link }));
+    }, [ dispatch, id, brand, category, price, description, image_link]);
     
     const style = {
         textAlign: 'left',
@@ -18,7 +18,7 @@ const ProductPage = () => {
     return (
         <div className='min-h-[600px] mt-10'>
             {/* {console.log(shoeData)} */}
-            <ProductsList data={shoeData} loading={loading} error={error} category={category} title='All Products'style={style} limit={8} />
+            <ProductsList data={shoeData} loading={loading} error={error} category={category} title='All Products'style={style} limit={20} />
         </div>
     );
 }
