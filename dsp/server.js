@@ -25,7 +25,7 @@ app.get('/.well-known/privacy-sandbox-attestations.json', (req, res) => {
       "ownership_token": "q2KA5o3efBQVJoZo13gt7JLG6w326siWv22j4kRbkClPYEyJ5TTojdaw6JYUUehr",
       "issued_seconds_since_epoch": 1720451668,
       "enrollment_id": "5FUNX",
-      "enrollment_site": "https://protected-audience-api-dsp.onrender.com/",
+      "enrollment_site": "https://protected-audience-api-advertiser.onrender.com/",
       "platform_attestations": [
         {
           "platform": "chrome",
