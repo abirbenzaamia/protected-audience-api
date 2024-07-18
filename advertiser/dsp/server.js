@@ -13,7 +13,12 @@ app.use(express.static('./ads'))
 
 app.use(cors());
 
-
+app.get('/.well-known/interest-group/permissions', (req, res) => {
+  res.json({
+    joinAdInterestGroup: true,
+    leaveAdInterestGroup: true,
+  });
+});
 
 app.get('/.well-known/privacy-sandbox-attestations.json', (req, res) => {
   res.json({
@@ -25,7 +30,7 @@ app.get('/.well-known/privacy-sandbox-attestations.json', (req, res) => {
       "ownership_token": "q2KA5o3efBQVJoZo13gt7JLG6w326siWv22j4kRbkClPYEyJ5TTojdaw6JYUUehr",
       "issued_seconds_since_epoch": 1720451668,
       "enrollment_id": "5FUNX",
-      "enrollment_site": "https://protected-audience-api-dsp.onrender.com/",
+      "enrollment_site": "https://protected-audience-api-advertiser.onrender.com/",
       "platform_attestations": [
         {
           "platform": "chrome",
@@ -49,13 +54,6 @@ app.get('/.well-known/privacy-sandbox-attestations.json', (req, res) => {
     }
   ]
 });
-});
-
-app.get('/.well-known/interest-group/permissions', (req, res) => {
-  res.json({
-    joinAdInterestGroup: true,
-    leaveAdInterestGroup: true,
-  });
 });
 
 app.listen(port, () => {
