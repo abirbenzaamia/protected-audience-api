@@ -8,6 +8,7 @@ export const initialState = {
     error: null,
     shoeData: [],
     singleShoeData: '',
+    shoeCat: [],
     loading: false
 }
 
@@ -34,6 +35,22 @@ export const getShoeById = createAsyncThunk('Shoe/getShoeById', async (shoeId, {
     try {
         const { data: { data, message } } = await api.GetShoeById(shoeId);
         NotifySuccess(message);
+        return data;
+    } catch (error) {
+        if (error?.response?.status >= 400 && error?.response?.status <= 500) {
+            NotifyWarning(error?.response?.data?.message || "Error please  reload page")
+            return rejectWithValue(error?.response?.data?.message || "Error please  reload page");
+        } else {
+            NotifyError(error.message)
+            return rejectWithValue(error.message)
+        }
+    }
+}
+);
+
+export const getShoeByCat = createAsyncThunk('Shoe/getShoeByCat', async (shoeCat, { rejectWithValue }) => {
+    try {
+        const data = await api.GetShoeByCategory(shoeCat);
         return data;
     } catch (error) {
         if (error?.response?.status >= 400 && error?.response?.status <= 500) {

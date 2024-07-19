@@ -6,6 +6,7 @@ import { Header } from './components/Header';
 // import pages
 import Home from './pages/Home';
 import Products from './pages/AllProducts';
+import CategoryPage from './pages/PerCategoryPage'
 
 const App = () => {
   
@@ -16,11 +17,11 @@ const App = () => {
         <Route path='/' element={<Home />} />
         {/* <Route path='/product/:id' element={<ProductDetails />} /> */}
         <Route path='/products' element={<Products />} />
-        <Route path='/sneakers' element={<Products />} />
-        <Route path='/boots' element={<Products />} />
-        <Route path='/sandals' element={<Products />} />
-        <Route path='/loafers' element={<Products />} />
-        <Route path='/heels' element={<Products />} />
+        <Route path='/sneakers' element={<CategoryPage />} />
+        <Route path='/boots' element={<CategoryPage />} />
+        <Route path='/sandals' element={<CategoryPage />} />
+        <Route path='/loafers' element={<CategoryPage />} />
+        <Route path='/heels' element={<CategoryPage />} />
         {/* <Route path='/wishlist' element={<Wishlist />} /> */}
         {/* <Route path='/user/:userId/verify/:verifyId' element={<UserVerification />} /> */}
         {/* <Route path='*' element={<PageNotFound />} /> */}
