@@ -17,11 +17,11 @@ const App = () => {
         <Route path='/' element={<Home />} />
         {/* <Route path='/product/:id' element={<ProductDetails />} /> */}
         <Route path='/products' element={<Products />} />
-        <Route path='/sneakers' element={<CategoryPage />} />
-        <Route path='/boots' element={<CategoryPage />} />
-        <Route path='/sandals' element={<CategoryPage />} />
-        <Route path='/loafers' element={<CategoryPage />} />
-        <Route path='/heels' element={<CategoryPage />} />
+        <Route path='/sneakers' element={<CategoryPage cat={"sneakers"} />} />
+        <Route path='/boots' element={<CategoryPage cat={"boots"}  />} />
+        <Route path='/sandals' element={<CategoryPage cat={"sandals"}  />} />
+        <Route path='/loafers' element={<CategoryPage cat={"loafers"}  />} />
+        <Route path='/heels' element={<CategoryPage cat={"heels"}  />} />
         {/* <Route path='/wishlist' element={<Wishlist />} /> */}
         {/* <Route path='/user/:userId/verify/:verifyId' element={<UserVerification />} /> */}
         {/* <Route path='*' element={<PageNotFound />} /> */}
