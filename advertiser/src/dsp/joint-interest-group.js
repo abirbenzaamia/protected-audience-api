@@ -7,7 +7,7 @@ console.log(url);
 // Define my audiences
 
 // General audience 
-const interestGroup = {
+var interestGroup = {
     name: "general",
 
     // This should be the origin where this file will be hosted
@@ -30,7 +30,7 @@ const interestGroup = {
 // ****************************************************************** //
 // Boots audience
 if (url === 'https://protected-audience-api-advertiser.onrender.com/boots'){
-    const interestGroup = {
+    interestGroup = {
         name: "boots",
     
         // This should be the origin where this file will be hosted
@@ -54,7 +54,7 @@ if (url === 'https://protected-audience-api-advertiser.onrender.com/boots'){
 // ****************************************************************** //
 // Heels audience
 if (url === 'https://protected-audience-api-advertiser.onrender.com/heels'){
-    const interestGroup = {
+        interestGroup = {
         name: "heels",
     
         // This should be the origin where this file will be hosted
@@ -78,7 +78,7 @@ if (url === 'https://protected-audience-api-advertiser.onrender.com/heels'){
 // ****************************************************************** //
 // Loafers audience
 if (url === 'https://protected-audience-api-advertiser.onrender.com/loafers'){
-    const interestGroup = {
+    interestGroup = {
         name: "loafers",
     
         // This should be the origin where this file will be hosted
@@ -102,7 +102,7 @@ if (url === 'https://protected-audience-api-advertiser.onrender.com/loafers'){
 // ****************************************************************** //
 // Sandals audience
 if (url === 'https://protected-audience-api-advertiser.onrender.com/sandals'){
-    const interestGroup = {
+    interestGroup = {
         name: "sandals",
     
         // This should be the origin where this file will be hosted
@@ -126,7 +126,7 @@ if (url === 'https://protected-audience-api-advertiser.onrender.com/sandals'){
 // ****************************************************************** //
 // Sneakers audience 
 if (url === 'https://protected-audience-api-advertiser.onrender.com/sneakers'){
-    const interestGroup = {
+    interestGroup = {
         name: "sneakers",
     
         // This should be the origin where this file will be hosted
