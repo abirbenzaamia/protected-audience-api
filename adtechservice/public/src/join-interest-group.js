@@ -649,7 +649,7 @@ var IG = {
     "joiningOrigin": "https://shoes-store-i4te.onrender.com",
     "maxTrustedBiddingSignalsURLLength": 32768,
     "name": "MeDlSHxJK3BWZmNhTFc4cE1aUzBiZmQ2eGF3PT18",
-    "ownerOrigin": "https://fledge.eu.criteo.com",
+    "owner": "https://fledge.eu.criteo.com",
     "priority": 0,
     "priorityVector": {
         "browserSignals.ageInMinutes": -1,
