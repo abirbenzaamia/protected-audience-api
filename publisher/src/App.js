@@ -1,12 +1,21 @@
 import './App.css';
+import AdSlot from './components/AdSlot';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h2>Protected Audience Demo Publisher</h2>
-      <p>Here is the winning Ads</p>
+      <h2>Publisher Website</h2>
+      <p>Ad according to your browsing history</p>
       </header>
+      <body>
+       <AdSlot>
+
+       </AdSlot>
+
+      </body>
     </div>
   );
 }
