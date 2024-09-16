@@ -32,9 +32,9 @@ app.get('/dsp', (req, res) => {
   res.render('joinIG', {layout : 'index'});
 })
 
-// app.get('/ssp', (req, res) => {
-//   res.render('adAuction', {layout : 'index'});
-// })
+app.get('/ssp', (req, res) => {
+  res.render('adAuction', {layout : 'index'});
+})
 
 app.get('/.well-known/interest-group/permissions', (req, res) => {
   res.json({
