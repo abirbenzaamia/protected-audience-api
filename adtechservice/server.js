@@ -50,6 +50,12 @@ app.get('/.well-known/interest-group/permissions', (req, res) => {
   });
 });
 
+app.use((req, res, next) => {
+  res.set('Permissions-Policy', 'run-ad-auction=()');
+  next();
+});
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
