@@ -14,13 +14,13 @@ var interestGroup = {
 
     // This script must have the same origin as the owner directly above
     // An example of bidding logic is provided in the next section.
-    biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/src/bidding-logic.js",
+    biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/dsp/bidding-logic.js",
     // joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
     // Protected Audience API requires that any ad that could be returned by bidding logic is listed here.
     // For this example there is only one ad which you will set up in Step 4.2
     joiningOrigin:"https://shoes-store-i4te.onrender.com",
     ads: [{
-        renderUrl: "https://protected-audience-api-advertiser.onrender.com/ad.html",
+        renderUrl: "https://protected-audience-api-tsc2.onrender.com/public/ads/ad.html",
     }],
 
 };
@@ -49,13 +49,13 @@ if (url === 'https://shoes-store-i4te.onrender.com/boots'){
     
         // This script must have the same origin as the owner directly above
         // An example of bidding logic is provided in the next section.
-        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/src/bidding-logic.js",
+        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/dsp/bidding-logic.js",
         // joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
         // Protected Audience API requires that any ad that could be returned by bidding logic is listed here.
         // For this example there is only one ad which you will set up in Step 4.2
         joiningOrigin:"https://shoes-store-i4te.onrender.",
         ads: [{
-            renderUrl: "https://protected-audience-api-advertiser.onrender.com/ad.html",
+            renderUrl: "https://protected-audience-api-tsc2.onrender.com/public/ads/ad.html",
         }],
     
     };
@@ -74,7 +74,7 @@ if (url === 'https://shoes-store-i4te.onrender.com/heels'){
     
         // This script must have the same origin as the owner directly above
         // An example of bidding logic is provided in the next section.
-        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/src/bidding-logic.js",
+        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/dsp/bidding-logic.js",
         // joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
         // Protected Audience API requires that any ad that could be returned by bidding logic is listed here.
         // For this example there is only one ad which you will set up in Step 4.2
@@ -99,7 +99,7 @@ if (url === 'https://shoes-store-i4te.onrender.com/loafers'){
     
         // This script must have the same origin as the owner directly above
         // An example of bidding logic is provided in the next section.
-        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/src/bidding-logic.js",
+        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/dsp/bidding-logic.js",
         // joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
         // Protected Audience API requires that any ad that could be returned by bidding logic is listed here.
         // For this example there is only one ad which you will set up in Step 4.2
@@ -124,7 +124,7 @@ if (url === 'https://shoes-store-i4te.onrender.com/sandals'){
     
         // This script must have the same origin as the owner directly above
         // An example of bidding logic is provided in the next section.
-        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/src/bidding-logic.js",
+        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/dsp/bidding-logic.js",
         // joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
         // Protected Audience API requires that any ad that could be returned by bidding logic is listed here.
         // For this example there is only one ad which you will set up in Step 4.2
@@ -149,13 +149,13 @@ if (url === 'https://shoes-store-i4te.onrender.com/sneakers'){
     
         // This script must have the same origin as the owner directly above
         // An example of bidding logic is provided in the next section.
-        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/src/bidding-logic.js",
+        biddingLogicUrl: "https://protected-audience-api-tsc2.onrender.com/dsp/bidding-logic.js",
         // joiningOrigin : "https://protected-audience-api-advertiser.onrender.com",
         // Protected Audience API requires that any ad that could be returned by bidding logic is listed here.
         // For this example there is only one ad which you will set up in Step 4.2
         joiningOrigin:"https://shoes-store-i4te.onrender.com",
         ads: [{
-            renderUrl: "https://protected-audience-api-advertiser.onrender.com/ad.html",
+            renderUrl: "https://protected-audience-api-advertiser.onrender.com/",
         }],
     
     };

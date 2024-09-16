@@ -46,3 +46,6 @@ app.get('/.well-known/interest-group/permissions', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+
+app.use(express.static('./public/ads'))
