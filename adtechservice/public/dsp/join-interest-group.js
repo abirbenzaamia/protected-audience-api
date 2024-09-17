@@ -20,7 +20,7 @@ var interestGroup = {
     // For this example there is only one ad which you will set up in Step 4.2
     joiningOrigin:"https://shoes-store-i4te.onrender.com",
     ads: [{
-        renderUrl: "https://protected-audience-api-tsc2.onrender.com/public/ads/ad.html",
+        renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
     }],
 
 };
@@ -80,7 +80,7 @@ if (url === 'https://shoes-store-i4te.onrender.com/heels'){
         // For this example there is only one ad which you will set up in Step 4.2
         joiningOrigin:"https://shoes-store-i4te.onrender.com",
         ads: [{
-            renderUrl: "https://protected-audience-api-advertiser.onrender.com/ad.html",
+            renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
         }],
     
     };
@@ -105,7 +105,7 @@ if (url === 'https://shoes-store-i4te.onrender.com/loafers'){
         // For this example there is only one ad which you will set up in Step 4.2
         joiningOrigin:"https://shoes-store-i4te.onrender.com",
         ads: [{
-            renderUrl: "https://protected-audience-api-advertiser.onrender.com/ad.html",
+            renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
         }],
     
     };
@@ -130,7 +130,7 @@ if (url === 'https://shoes-store-i4te.onrender.com/sandals'){
         // For this example there is only one ad which you will set up in Step 4.2
         joiningOrigin:"https://shoes-store-i4te.onrender.com",
         ads: [{
-            renderUrl: "https://protected-audience-api-advertiser.onrender.com/ad.html",
+            renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
         }],
     
     };
@@ -155,7 +155,7 @@ if (url === 'https://shoes-store-i4te.onrender.com/sneakers'){
         // For this example there is only one ad which you will set up in Step 4.2
         joiningOrigin:"https://shoes-store-i4te.onrender.com",
         ads: [{
-            renderUrl: "https://protected-audience-api-advertiser.onrender.com/",
+            renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
         }],
     
     };
