@@ -4,7 +4,6 @@ const express = require('express')
 const { engine } = require('express-handlebars');
 
 const app = express()
-const cors = require('cors');
 const port = 3000
 
 // app.get('/', (req, res) => {
@@ -13,7 +12,6 @@ const port = 3000
 
 
 // Serve decision-logic.js and run-ad-auction.js files
-app.use(cors());
 const path = require('path')
 app.use(express.static(path.join(__dirname, 'public')));
 
