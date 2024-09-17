@@ -41,7 +41,9 @@ app.get('/ssp/decision-logic.js ', (req, res) => {
   res.render('decisionLogic', {layout : 'index'});
 })
 
+
 //permission policy for run ad auction 
+
 app.use((req, res, next) => {
   res.set('Permissions-Policy', 'run-ad-auction=*');
   // Proceed to the next middleware or route handler
