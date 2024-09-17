@@ -42,7 +42,7 @@ app.get('/ssp', (req, res) => {
 //permission policy for run ad auction 
 
 app.use((req, res, next) => {
-  res.set('Permissions-Policy', 'run-ad-auction=*, microphone=*');
+  res.set('Permissions-Policy', 'run-ad-auction=*');
   // Proceed to the next middleware or route handler
   next();
 });
