@@ -1,5 +1,5 @@
 
-const runAuction = async (sspUrl, dspUrl) => {
+async function runAuction() {
   const resolveToConfig = typeof window.FencedFrameConfig !== 'undefined';
 
   const auctionConfig = {
@@ -32,3 +32,6 @@ const runAuction = async (sspUrl, dspUrl) => {
     frame.src = selectedAd;
   }
 };
+
+
+runAuction();
