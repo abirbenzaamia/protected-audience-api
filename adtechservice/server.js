@@ -45,14 +45,6 @@ app.get('/.well-known/interest-group/permissions', (req, res) => {
   });
 });
 
-app.get('/.well-known/interest-group/permissions', (req, res) => {
-  res.json({
-    joinAdInterestGroup: true,
-    leaveAdInterestGroup: true,
-  });
-});
-
-
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
