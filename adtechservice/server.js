@@ -28,10 +28,12 @@ app.get('/', (req, res) => {
   res.send('Welcome the the AdTech Service ')
 })
 
+
+// to run join interest group script
 app.get('/dsp', (req, res) => {
   res.render('joinIG', {layout : 'index'});
 })
-
+// to run join interest group script
 app.get('/ssp', (req, res) => {
   res.render('adAuction', {layout : 'index'});
 })
@@ -55,5 +57,3 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
-
-app.use(express.static('./public/ads'))

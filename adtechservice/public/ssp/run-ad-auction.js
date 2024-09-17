@@ -4,7 +4,7 @@ const auctionConfig = {
     decisionLogicUrl: "https://protected-audience-api-tsc2.onrender.com/ssp/decision-logic.js",
   
     // This should be a list of all DSPs that you wish to participate in this auction
-    interestGroupBuyers: ['https://protected-audience-api-tsc2.onrender.com', 'https://fledge.eu.criteo.com'],
+    interestGroupBuyers: ['https://protected-audience-api-tsc2.onrender.com'],
   // This object will be available to all auction participants
     auctionSignals: { },
 
@@ -22,6 +22,7 @@ async function runAuction(){
   // Run ad auction
   const opaqueUrl = await navigator.runAdAuction(auctionConfig);
   // Render ad
+  console.log(opaqueUrl)
   const iframeEl = document.createElement('iframe');
   iframeEl.src = opaqueUrl;
   document.body.appendChild(iframeEl);

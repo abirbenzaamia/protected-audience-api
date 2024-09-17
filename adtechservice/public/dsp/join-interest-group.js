@@ -55,7 +55,7 @@ if (url === 'https://shoes-store-i4te.onrender.com/boots'){
         // For this example there is only one ad which you will set up in Step 4.2
         joiningOrigin:"https://shoes-store-i4te.onrender.",
         ads: [{
-            renderUrl: "https://protected-audience-api-tsc2.onrender.com/public/ads/ad.html",
+            renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
         }],
     
     };
