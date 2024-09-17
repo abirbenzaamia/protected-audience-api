@@ -38,6 +38,15 @@ app.get('/ssp', (req, res) => {
   res.render('adAuction', {layout : 'index'});
 })
 
+
+//permission policy for run ad auction 
+
+app.use((req, res, next) => {
+  res.set('Permissions-Policy', 'run-ad-auction=(*)');
+  next();
+});
+
+
 app.get('/.well-known/interest-group/permissions', (req, res) => {
   res.json({
     joinAdInterestGroup: true,
