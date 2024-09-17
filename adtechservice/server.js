@@ -43,10 +43,13 @@ app.use('/ssp',(req, res, next) => {
 });
 
 // permission policy for run ad auction 
-app.use('/dsp',(req, res, next) => {
-  res.set('Permissions-Policy', 'run-ad-auction=*');
-  // Proceed to the next middleware or route handler
-  next();
+app.use('/dsp/bidding-logic.js', (req, res, next) => {
+  res.setHeader('Ad-Auction-Allowed', 'true');  // Set the required header
+  next();  // Continue to serve the script
+});
+app.use('/ssp/run-ad-auction', (req, res, next) => {
+  res.setHeader('Ad-Auction-Allowed', 'true');  // Set the required header
+  next();  // Continue to serve the script
 });
 
 
