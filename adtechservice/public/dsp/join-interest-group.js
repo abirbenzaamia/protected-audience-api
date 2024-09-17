@@ -22,7 +22,7 @@ var interestGroup = {
     ads: [{
         renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
     }],
-
+    executionMode: "group-by-origin"
 };
 
 
