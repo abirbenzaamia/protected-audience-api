@@ -10,7 +10,6 @@ const port = 3000
 //   res.send('Welcome the The DSP ')
 // })
 
-
 // Serve decision-logic.js and run-ad-auction.js files
 const path = require('path')
 app.use(express.static(path.join(__dirname, 'public')));
