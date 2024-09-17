@@ -36,16 +36,13 @@ app.get('/ssp', (req, res) => {
 })
 
 // permission policy for run ad auction 
-app.use((req, res, next) => {
+app.use('/',(req, res, next) => {
   res.set('Permissions-Policy', 'run-ad-auction=*');
   // Proceed to the next middleware or route handler
   next();
 });
 
-app.use('/ssp', (req, res, next) => {
-  res.setHeader('Ad-Auction-Allowed', 'true');
-  next();
-});
+
 
 app.get('/.well-known/interest-group/permissions', (req, res) => {
   res.json({
