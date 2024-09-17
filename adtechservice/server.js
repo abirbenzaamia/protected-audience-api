@@ -35,17 +35,17 @@ app.get('/ssp', (req, res) => {
   res.render('adAuction', {layout : 'index'});
 })
 
-//permission policy for run ad auction 
-// app.use((req, res, next) => {
-//   res.set('Permissions-Policy', 'run-ad-auction=*');
-//   // Proceed to the next middleware or route handler
-//   next();
-// });
+// permission policy for run ad auction 
+app.use((req, res, next) => {
+  res.set('Permissions-Policy', 'run-ad-auction=*');
+  // Proceed to the next middleware or route handler
+  next();
+});
 
-// app.use('/ssp/decision-logic.js', (req, res, next) => {
-//   res.setHeader('Ad-Auction-Allowed', 'true');
-//   next();
-// });
+app.use('/ssp', (req, res, next) => {
+  res.setHeader('Ad-Auction-Allowed', 'true');
+  next();
+});
 
 app.get('/.well-known/interest-group/permissions', (req, res) => {
   res.json({
