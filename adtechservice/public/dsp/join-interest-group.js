@@ -20,7 +20,7 @@ var interestGroup = {
     // For this example there is only one ad which you will set up in Step 4.2
     joiningOrigin:"https://shoes-store-i4te.onrender.com",
     ads: [{
-        renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
+        renderURL: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
         metadata: {
             adName: 'default-ad',
           },

@@ -26,7 +26,7 @@ const runAuction = async () => {
   const auctionConfig = {
    // This should be the same origin as decisionLogicUrl below
    seller: "https://protected-audience-api-tsc2.onrender.com", 
-   decisionLogicUrl: "https://protected-audience-api-tsc2.onrender.com/ssp/decision-logic.js",
+   decisionLogicURL: "https://protected-audience-api-tsc2.onrender.com/ssp/decision-logic.js",
  
    // This should be a list of all DSPs that you wish to participate in this auction
    interestGroupBuyers: ['https://protected-audience-api-tsc2.onrender.com'],
