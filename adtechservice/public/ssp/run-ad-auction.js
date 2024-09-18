@@ -6,19 +6,11 @@ async function runAuction() {
     seller: 'https://protected-audience-api-tsc2.onrender.com/',
     decisionLogicUrl: `https://protected-audience-api-tsc2.onrender.com/ssp/decision-logic.js`,
     interestGroupBuyers: ['https://protected-audience-api-tsc2.onrender.com/'],
-    auctionSignals: { isControversial: true },
-    sellerSignals: { key: 'value' },
-    sellerTimeout: 100,
     perBuyerSignals: {
       ['https://protected-audience-api-tsc2.onrender.com/']: { windowInnerHeight: window.innerHeight },
     },
-    perBuyerTimeouts: {
-      '*': 50,
-    },
     resolveToConfig
   };
-
-  console.log('auctionConfig = ', JSON.stringify(auctionConfig));
  
   // Run ad auction
   const selectedAd = await navigator.runAdAuction(auctionConfig);
