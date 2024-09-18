@@ -22,7 +22,7 @@ async function runAuction() {
  
   // Run ad auction
   const selectedAd = await navigator.runAdAuction(auctionConfig);
-  console.log()
+  console.log(selectedAd)
   // Render ad
   const frame = document.getElementById('protected-audience-ad');
 

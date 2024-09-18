@@ -3,6 +3,7 @@ function scoreAd(adMetadata, bid, auctionConfig, trustedScoringSignals, browserS
     // For this example the original bid value of each bid becomes the 
     // desirability score. The score of each ad is compared automatically and the ad 
     // with the highest score is returned by the Protected Audience auction.
+    console.log('scoring the ad')
     return bid;
 }
 
