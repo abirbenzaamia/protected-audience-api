@@ -1,5 +1,6 @@
 
 function generateBid(interestGroup, auctionSignals, perBuyerSignals, trustedBiddingSignals, browserSignals) {
+    console.log(interestGroup.ads[0].renderURL)
     return {
 
         // Free form object provided to Seller's scoreAd(...) function
