@@ -21,3 +21,5 @@ function reportResult(auctionConfig, browserSignals) {
     reportUrl: auctionConfig.seller + '/report_seller',
   };
 }
+
+
