@@ -47,7 +47,7 @@ app.use('/dsp/bidding-logic.js', (req, res, next) => {
   res.setHeader('Ad-Auction-Allowed', 'true');  // Set the required header
   next();  // Continue to serve the script
 });
-app.use('/ssp/run-ad-auction', (req, res, next) => {
+app.use('/ssp/decision-logic.js', (req, res, next) => {
   res.setHeader('Ad-Auction-Allowed', 'true');  // Set the required header
   next();  // Continue to serve the script
 });
