@@ -11,7 +11,7 @@ function generateBid(interestGroup, auctionSignals, perBuyerSignals, trustedBidd
         bid: 1,
 
         // This URL needs to match one of the URLs in the ads object provided to the interestGroup object during the call to joinAdInterestGroup.
-        render: interestGroup.ads[0].renderUrl,
+        render: interestGroup.ads[0].renderURL,
     };
 }
 
