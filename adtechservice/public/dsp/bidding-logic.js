@@ -1,15 +1,14 @@
 
 function generateBid(interestGroup, auctionSignals, perBuyerSignals, trustedBiddingSignals, browserSignals) {
     const [testAd] = interestGroup.ads;
-    console.log(interestGroup.ads[0].renderURL)
-    console.log(testAd)
+    console.log(testAd.renderURL)
 
   return {
     bid: 1, // Arbitrary bid value
     ad: {
       adName: testAd?.metadata?.adName,
     },
-    render: testAd?.renderURL,
+    render: 'https://protected-audience-api-tsc2.onrender.com/ads/default-ad.html',
   };
 }
 

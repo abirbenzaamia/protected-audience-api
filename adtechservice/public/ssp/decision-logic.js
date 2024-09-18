@@ -1,6 +1,6 @@
 
 function scoreAd(adMetadata, bid, auctionConfig, trustedScoringSignals, browserSignals) {
-
+  console.log(bid)
   return bid;
 }
 
