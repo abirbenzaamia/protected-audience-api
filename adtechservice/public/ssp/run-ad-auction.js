@@ -16,6 +16,10 @@ const auctionConfig = {
   perBuyerSignals: {
   "https://protected-audience-api-tsc2.onrender.com": { },
 },
+perBuyerTimeouts: {
+  '*': 50,
+},
+resolveToConfig
 };
 
 async function runAuction(){
