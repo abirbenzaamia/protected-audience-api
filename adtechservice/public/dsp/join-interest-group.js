@@ -21,8 +21,10 @@ var interestGroup = {
     joiningOrigin:"https://shoes-store-i4te.onrender.com",
     ads: [{
         renderUrl: "https://protected-audience-api-tsc2.onrender.com/ads/ad.html",
+        metadata: {
+            adName: 'default-ad',
+          },
     }],
-    executionMode: "group-by-origin"
 };
 
 
