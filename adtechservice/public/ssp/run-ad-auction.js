@@ -29,7 +29,7 @@ const runAuction = async () => {
    decisionLogicURL: "https://protected-audience-api-tsc2.onrender.com/ssp/decision-logic.js",
  
    // This should be a list of all DSPs that you wish to participate in this auction
-   interestGroupBuyers: ['https://protected-audience-api-tsc2.onrender.com'],
+   interestGroupBuyers: ['https://protected-audience-api-tsc2.onrender.com', 'https://protected-audience-demo-dsp.web.app'],
  // This object will be available to all auction participants
     auctionSignals: { isControversial: true },
     sellerSignals: { key: 'value' },
