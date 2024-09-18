@@ -1,14 +1,6 @@
 
 function scoreAd(adMetadata, bid, auctionConfig, trustedScoringSignals, browserSignals) {
-  console.log(
-    JSON.stringify({
-      adMetadata,
-      bid,
-      auctionConfig,
-      trustedScoringSignals,
-      browserSignals,
-    })
-  );
+
   return bid;
 }
 
