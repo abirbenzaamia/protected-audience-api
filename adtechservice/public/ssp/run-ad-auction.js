@@ -73,9 +73,12 @@ iframeEl.mode = 'opaque-ads';
 iframeEl.style.width  = '300px';
 iframeEl.style.height = '250px';
 
-document.body.appendChild(iframeEl);
-
 var parentIframe = document.getElementById('parentIframe');
+if (parentIframe) {
+  parentIframe.remove();  // Removes the iframe from the DOM
+  console.log('Iframe deleted.');
+}
+document.body.appendChild(iframeEl);
 
 if (window.FencedFrameConfig && opaqueUrl instanceof FencedFrameConfig){
   iframeEl.config = opaqueUrl;
@@ -84,8 +87,6 @@ if (window.FencedFrameConfig && opaqueUrl instanceof FencedFrameConfig){
   iframeEl.src = opaqueUrl;
 }
   
-
-parentIframe.style.display = 'block';
 }
 
 runAuction();

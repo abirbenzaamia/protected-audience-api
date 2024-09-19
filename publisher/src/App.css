@@ -2,12 +2,18 @@ body {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   width: 80vw;
   margin: 2vh auto 0;
-  background-color: #f8f8f8;
+  background-color: #ebe7e7;
 }
 
 iframe {
-  display: none;
+  /* display: none; */
+  margin: 0;
+  border: 0;
+  height: 250px;
+  width: 300px;
+
 }
+
 fencedframe {
   height: 250px;
   width: 300px;
