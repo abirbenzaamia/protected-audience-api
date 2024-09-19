@@ -75,7 +75,7 @@ iframeEl.style.height = '250px';
 
 document.body.appendChild(iframeEl);
 
-
+var parentIframe = document.getElementById('parentIframe');
 
 if (window.FencedFrameConfig && opaqueUrl instanceof FencedFrameConfig){
   iframeEl.config = opaqueUrl;
@@ -84,6 +84,8 @@ if (window.FencedFrameConfig && opaqueUrl instanceof FencedFrameConfig){
   iframeEl.src = opaqueUrl;
 }
   
+
+parentIframe.style.display = 'block';
 }
 
 runAuction();
