@@ -1,8 +1,10 @@
+/* eslint-disable react/style-prop-object */
 import React from 'react'
 
 export default function AdSlot() {
   return (
-    <iframe title='3rd party ad content' allow='run-ad-auction' src='https://protected-audience-api-tsc2.onrender.com/ssp/' >
+    <iframe title='3rd party ad content' allow='run-ad-auction' src='https://protected-audience-api-tsc2.onrender.com/ssp/'
+     style='width: 0; height: 0; border: 0; border: none; position: absolute;'>
     {/* <fencedframe id='protected-audience-ad' mode='opaque-ads'></fencedframe> */}
     </iframe>
   )
