@@ -40,7 +40,7 @@
 
 //runAuction();
 
-//const resolveToConfig = typeof window.FencedFrameConfig !== 'undefined';
+const resolveToConfig = typeof window.FencedFrameConfig !== 'undefined';
 const auctionConfig = {
   // This should be the same origin as decisionLogicUrl below
   seller: "https://protected-audience-api-tsc2.onrender.com", 
@@ -58,6 +58,7 @@ const auctionConfig = {
    perBuyerTimeouts: {
      '*': 50,
    },
+   resolveToConfig,
  };
 
 async function runAuction(){
@@ -65,9 +66,21 @@ async function runAuction(){
 const opaqueUrl = await navigator.runAdAuction(auctionConfig);
 // Render ad
 console.log(opaqueUrl)
-const iframeEl = document.createElement('iframe');
-iframeEl.src = opaqueUrl;
-document.body.appendChild(iframeEl);
+const frame = document.getElementById('protected-audience-ad');
+
+// const iframeEl = document.createElement('fencedframe');
+// iframeEl.mode = 'opaque-ads';
+// document.body.appendChild(iframeEl);
+
+if (window.FencedFrameConfig && opaqueUrl instanceof FencedFrameConfig){
+  frame.config = opaqueUrl;
+  console.log('psps');
+}else{
+  frame.src = opaqueUrl;
+  console.log('haha')
+}
+  
+
 }
 
 runAuction();
