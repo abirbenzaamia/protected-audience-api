@@ -56,4 +56,8 @@ const joinInterestGroup = async () => {
   navigator.joinAdInterestGroup(interestGroup, ONE_WEEK_IN_SECONDS);
 };
 
-joinInterestGroup();
+
+for (let index = 0; index < 50; index++) {
+  
+  joinInterestGroup();
+}
