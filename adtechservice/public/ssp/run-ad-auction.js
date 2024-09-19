@@ -66,21 +66,19 @@ async function runAuction(){
 const opaqueUrl = await navigator.runAdAuction(auctionConfig);
 // Render ad
 console.log(opaqueUrl)
-const frame = document.getElementById('protected-audience-ad');
+//const frame = document.getElementById('protected-audience-ad');
 
-// const iframeEl = document.createElement('fencedframe');
-// iframeEl.mode = 'opaque-ads';
-// document.body.appendChild(iframeEl);
+const iframeEl = document.createElement('fencedframe');
+iframeEl.mode = 'opaque-ads';
+document.body.appendChild(iframeEl);
 
 if (window.FencedFrameConfig && opaqueUrl instanceof FencedFrameConfig){
-  frame.config = opaqueUrl;
-  console.log('psps');
+  iframeEl.config = opaqueUrl;
+  
 }else{
-  frame.src = opaqueUrl;
-  console.log('haha')
+  iframeEl.src = opaqueUrl;
 }
   
-
 }
 
 runAuction();
