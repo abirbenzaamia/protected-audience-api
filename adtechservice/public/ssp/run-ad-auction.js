@@ -70,8 +70,8 @@ console.log(opaqueUrl)
 
 const iframeEl = document.createElement('fencedframe');
 iframeEl.mode = 'opaque-ads';
-// iframeEl.width  = iframeEl.contentWindow.document.body.scrollWidth;
-// iframeEl.height = iframeEl.contentWindow.document.body.scrollWidth;
+iframeEl.style.width  = '300px';
+iframeEl.style.height = '250px';
 
 document.body.appendChild(iframeEl);
 
