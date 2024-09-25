@@ -6,6 +6,7 @@ import Footer from "./components/common/footer/Footer"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import SinglePage from "./components/singlePage/SinglePage"
 import Culture from "./components/culture/Culture"
+import PrivacyPolicy from "./components/PrivacyPolicy"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route exact path='/' component={Homepages} />
           <Route path='/singlepage/:id' exact component={SinglePage} />
           <Route exact path='/culture' component={Culture} />
+          <Route exact path='/privacy-policy' component={PrivacyPolicy} />
         </Switch>
         <Footer />
       </Router>
