@@ -19,7 +19,7 @@ function scoreAd(adMetadata, bid, auctionConfig, trustedScoringSignals, browserS
 
   const { selectedBuyerAndSellerReportingId, buyerAndSellerReportingId } = browserSignals;
   console.log(`From scoreAd - bsrid=${buyerAndSellerReportingId}, sbsrid=${selectedBuyerAndSellerReportingId}`);
-
+  
   return bid;
 }
 
@@ -34,4 +34,5 @@ function reportResult(auctionConfig, browserSignals) {
     reportUrl: auctionConfig.seller + '/report_seller',
   };
 }
+
 
