@@ -7,6 +7,11 @@ const app = express()
 const port = 3000
 
 app.use((req, res, next) => {
+  res.setHeader('Supports-Loading-Mode', 'fenced-frame');
+  next();
+});
+
+app.use((req, res, next) => {
   res.setHeader('Ad-Auction-Allowed', 'true');
   next();
 });
