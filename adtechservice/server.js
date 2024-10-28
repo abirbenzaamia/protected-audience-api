@@ -45,24 +45,6 @@ app.get('/ssp', (req, res) => {
   res.render('adAuction', {layout : 'index'});
 })
 
-// permission policy for run ad auction 
-// app.use('/ssp',(req, res, next) => {
-//   res.setHeader('Ad-Auction-Allowed', 'true');
-//   // Proceed to the next middleware or route handler
-//   next();
-// });
-// app.use('/ssp/decision-logic.js',(req, res, next) => {
-//   res.setHeader('Ad-Auction-Allowed', 'true');
-//   // Proceed to the next middleware or route handler
-//   next();
-// });
-// app.use('/dsp/bidding-logic.js',(req, res, next) => {
-//   res.setHeader('Ad-Auction-Allowed', 'true');
-//   // Proceed to the next middleware or route handler
-//   next();
-// });
-
-
 
 // Define a route
 
