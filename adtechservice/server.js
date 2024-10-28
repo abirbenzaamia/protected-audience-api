@@ -20,6 +20,10 @@ app.use((req, res, next) => {
 const path = require('path')
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Route to serve the JSON file
+// app.get('/privacy-sandbox-attestations', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public', 'privacy-sandbox-attestations.json'));
+// });
 
 // Configure handlebars
 app.engine('.hbs', engine({extname: '.hbs'}));
@@ -70,72 +74,7 @@ app.get('/.well-known/interest-group/permissions', (req, res) => {
 });
 
 
-app.get('/.well_known/privacy-sandbox-attestations.json', (req, res) => {
-  res.json(
-    {
-      "privacy_sandbox_api_attestations": [
-        {
-          "attestation_parser_version": "2",
-          "attestation_version": "2",
-          "privacy_policy": [],
-          "ownership_token": "SLNh9ZaZKArAoKueMOhZb53ewcNzK9J3Wt4FILGUNxekHzGMRTQfnPrAJcJt4VyN",
-          "issued_seconds_since_epoch": 1730126034,
-          "enrollment_id": "5FUNX",
-          "enrollment_site": "https://greensandbox.fr",
-          "platform_attestations": [
-            {
-              "platform": "chrome",
-              "attestations": {
-                "attribution_reporting_api": {
-                  "ServiceNotUsedForIdentifyingUserAcrossSites": true
-                },
-                "topics_api": {
-                  "ServiceNotUsedForIdentifyingUserAcrossSites": true
-                },
-                "protected_audience_api": {
-                  "ServiceNotUsedForIdentifyingUserAcrossSites": true
-                }
-              }
-            },
-            {
-              "platform": "android",
-              "attestations": {}
-            }
-          ]
-        },
-        {
-          "attestation_parser_version": "2",
-          "attestation_version": "1",
-          "privacy_policy": [],
-          "ownership_token": "q2KA5o3efBQVJoZo13gt7JLG6w326siWv22j4kRbkClPYEyJ5TTojdaw6JYUUehr",
-          "issued_seconds_since_epoch": 1720451668,
-          "enrollment_id": "5FUNX",
-          "enrollment_site": "https://protected-audience-api-advertiser.onrender.com/",
-          "platform_attestations": [
-            {
-              "platform": "chrome",
-              "attestations": {
-                "attribution_reporting_api": {
-                  "ServiceNotUsedForIdentifyingUserAcrossSites": true
-                },
-                "topics_api": {
-                  "ServiceNotUsedForIdentifyingUserAcrossSites": true
-                },
-                "protected_audience_api": {
-                  "ServiceNotUsedForIdentifyingUserAcrossSites": true
-                }
-              }
-            },
-            {
-              "platform": "android",
-              "attestations": {}
-            }
-          ]
-        }
-      ]
-    }
-  );
-});
+
 
 
 
