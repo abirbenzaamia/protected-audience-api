@@ -8,8 +8,8 @@ const auctionConfig = {
   decisionLogicURL: "https://www.greensandbox.fr/ssp/decision-logic.js",
 
   // This should be a list of all DSPs that you wish to participate in this auction
-  // interestGroupBuyers: ['https://www.greensandbox.fr', 'https://protected-audience-demo-dsp.web.app', 'https://doubleclick.net', 'https://f.creativecdn.com', 'https://criteo.com','https://fledge.teads.tv'],
-   interestGroupBuyers: ['https://www.greensandbox.fr'],
+   interestGroupBuyers: ['https://td.doubleclick.net', 'https://f.creativecdn.com', 'https://criteo.com'],
+   //interestGroupBuyers: ['https://www.greensandbox.fr'],
    auctionSignals: { isControversial: true },
    sellerSignals: { key: 'value' },
    sellerTimeout: 100,

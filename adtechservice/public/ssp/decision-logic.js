@@ -18,9 +18,10 @@
 function scoreAd(adMetadata, bid, auctionConfig, trustedScoringSignals, browserSignals) {
 
   const { selectedBuyerAndSellerReportingId, buyerAndSellerReportingId } = browserSignals;
-  console.log(`From scoreAd - bsrid=${buyerAndSellerReportingId}, sbsrid=${selectedBuyerAndSellerReportingId}`);
   
-  return bid;
+  console.log(`From scoreAd - bsrid=${buyerAndSellerReportingId}, sbsrid=${selectedBuyerAndSellerReportingId}`);
+
+  return bid*200;
 }
 
 function reportResult(auctionConfig, browserSignals) {
