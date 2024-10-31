@@ -4,8 +4,8 @@
 const resolveToConfig = typeof window.FencedFrameConfig !== 'undefined';
 const auctionConfig = {
   // This should be the same origin as decisionLogicUrl below
-  seller: "https://www.greensandbox.fr", 
-  decisionLogicURL: "https://www.greensandbox.fr/ssp/decision-logic.js",
+  seller: "https://greensandbox.fr", 
+  decisionLogicURL: "https://greensandbox.fr/ssp/decision-logic.js",
 
   // This should be a list of all DSPs that you wish to participate in this auction
    interestGroupBuyers: ['https://td.doubleclick.net', 'https://f.creativecdn.com', 'https://criteo.com'],
@@ -14,7 +14,7 @@ const auctionConfig = {
    sellerSignals: { key: 'value' },
    sellerTimeout: 100,
    perBuyerSignals: {
-     ['https://www.greensandbox.fr']: { windowInnerHeight: window.innerHeight },
+     ['https://greensandbox.fr']: { windowInnerHeight: window.innerHeight },
    },
    perBuyerTimeouts: {
      '*': 50,
