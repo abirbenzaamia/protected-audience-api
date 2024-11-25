@@ -8,18 +8,14 @@ import { HiOutlineUsers, HiOutlineLogout } from "react-icons/hi";
 import { IoRestaurantOutline } from "react-icons/io5";
 import { Logo } from "..";
 import { Avatar as MuiAvatar } from "@mui/material";
-import useAuth from "../../hooks/useAuth";
-import { useLogoutMutation } from "../../features/auth/authApiSlice";
 
 const index = ({ isCollapsed, setIsCollapsed }) => {
-  const user = useAuth();
+ 
 
-  const [logout] = useLogoutMutation();
 
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    logout();
     localStorage.setItem("persist", false);
     navigate("/auth/signin");
   };
@@ -44,16 +40,12 @@ const index = ({ isCollapsed, setIsCollapsed }) => {
         <div className="flex gap-2 items-center">
           <div className="w-12 h-12">
             <MuiAvatar
-              alt={user?.name}
-              src={user?.profilePicture}
               sx={{ width: 48, height: 48 }}
               className="rounded-full border-primary border-2 -mr-2"
             />
           </div>
           {!isCollapsed && (
             <div className="flex flex-col gap-1">
-              <h2 className="font-bold">{user?.name}</h2>
-              <p className="text-sm text-gray-500">{user?.email}</p>
             </div>
           )}
         </div>
