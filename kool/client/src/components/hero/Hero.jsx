@@ -13,9 +13,10 @@ const Hero = () => {
           Welcome to <span className="text-primary">Kool</span>
         </h2>
         <p className="text-gray-600 text-center md:text-start">
-        A haven for food enthusiasts to dive into delicious recipes, 
-        explore culinary tips, and share the joy of cooking.
-         Discover, create, and connect with others who savor every flavor and celebrate every meal.
+
+         Welcome to my culinary haven! Here, I share my personal recipes, blending traditional and modern flavors, from sweet to savory.
+         Each dish is crafted with love and inspired by my passion for cooking. 
+         Let’s create and savor delicious moments together !
         </p>
         <Link to={"/recipe"}>
           <Button

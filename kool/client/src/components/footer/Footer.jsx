@@ -16,9 +16,8 @@ const Footer = () => {
         <div className="basis-1/2 flex flex-col gap-6 items-center md:items-start text-center md:text-start">
           <Logo />
           <p>
-          Where authentic flavors come alive! Join a community of passionate food lovers exploring time-honored recipes, 
-          cherished family dishes, and the stories behind each meal. Taste, create, and connect over 
-          the rich traditions of world cuisine.
+          Where authentic flavors meet creativity! Explore a collection of cherished family recipes, traditional dishes, and modern favorites.
+           Dive into the stories behind each meal and connect with a community of food lovers who celebrate the joy of cooking and sharing.
           </p>
         </div>
         {/* Footer top right */}
