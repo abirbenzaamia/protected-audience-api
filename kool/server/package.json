@@ -18,6 +18,7 @@
     "express-rate-limit": "^6.9.0",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.1",
+    "nodemon": "^3.1.7",
     "stripe": "^12.17.0"
   }
 }

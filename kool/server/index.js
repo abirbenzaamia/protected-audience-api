@@ -9,15 +9,17 @@ const mongoose = require("mongoose");
 const connectDB = require("./db/conn");
 
 const app = express();
-app.use(
-  cors({
-    origin: 'https://kool-by-me.onrender.com', // Replace with your frontend's domain
-    credentials: true, // Allow credentials
-  })
-);
+// app.use(
+//   cors({
+//     origin: 'http://localhost:5173', // Replace with your frontend's domain
+//     // credentials: true, // Allow credentials
+//   }
+// )
+// );
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://kool-by-me.onrender.com');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
+  // res.setHeader('Access-Control-Allow-Origin', 'https://kool-by-me.onrender.com');
   next();
 });
 

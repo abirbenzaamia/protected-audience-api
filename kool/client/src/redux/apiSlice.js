@@ -3,24 +3,24 @@ import { setCredentials} from "../features/auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
   baseUrl: import.meta.env.VITE_SERVER_BASE_URL,
-  credentials: "include",
-
+  credentials: "same-origin",
   prepareHeaders: (headers, { getState }) => {
     const token = getState().auth.token;
     console.log(token)
     if (token) {
       headers.set("authorization", `Bearer ${token}`);
     }
+    console.log(headers)
     return headers;
   },
 });
 
 const baseQueryWithReauth = async (args, api, extraOptions) => {
   console.log(args);
-  console.log(api);
-  console.log(extraOptions);
+  // console.log(api);
+  // console.log(extraOptions);
   let result = await baseQuery(args, api, extraOptions);
-
+  console.log(result)
   if (result?.error?.originalStatus === 403) {
     const refreshResult = await baseQuery("/auth/refresh", api, extraOptions);
 
@@ -40,5 +40,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
 
 export const apiSlice = createApi({
   baseQuery: baseQueryWithReauth,
-  endpoints: () => ({}),
+  endpoints: (builder) => ({
+    
+  }),
 });
