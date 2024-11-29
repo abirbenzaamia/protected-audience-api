@@ -17,7 +17,7 @@ const SignIn = () => {
   const [signIn, { isLoading }] = useSignInMutation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  useTitle("Recipen - Sign In");
+  useTitle("Kool - Sign In");
 
   const handleChange = (e) => {
     setFormDetails({ ...formDetails, [e.target.id]: e.target.value });

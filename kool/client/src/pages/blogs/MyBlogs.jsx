@@ -7,7 +7,7 @@ import useTitle from "../../hooks/useTitle";
 const index = () => {
   const { data, isLoading } = useGetBlogsQuery();
   const user = useAuth();
-  useTitle("Recipen - My Blogs");
+  useTitle("Kool - My Blogs");
 
   const updatedData = data?.filter((obj) => obj.author._id === user?.userId);
 

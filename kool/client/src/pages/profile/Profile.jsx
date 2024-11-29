@@ -15,7 +15,7 @@ import useTitle from "../../hooks/useTitle";
 
 const Profile = () => {
   const user = useAuth();
-  useTitle("Recipen - Profile");
+  useTitle("Kool - Profile");
 
   const [formDetails, setFormDetails] = useState({
     name: user?.name || "",
