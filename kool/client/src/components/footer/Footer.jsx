@@ -1,8 +1,8 @@
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-} from "react-icons/ai";
+// import {
+//   AiFillGithub,
+//   AiFillLinkedin,
+//   AiFillTwitterCircle,
+// } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { Logo } from "..";
 import { Link } from "react-router-dom";
@@ -35,7 +35,7 @@ const Footer = () => {
               <Link>Contact</Link>
             </motion.li>
           </ul>
-          <ul className="flex flex-col gap-2 font-semibold mx-8 items-center md:items-start">
+          {/* <ul className="flex flex-col gap-2 font-semibold mx-8 items-center md:items-start">
             <li className="text-gray-700 text-sm text-bold mb-2">Kool</li>
             <motion.li whileHover={{ x: 5 }}>
               <Link>About</Link>
@@ -46,7 +46,7 @@ const Footer = () => {
             <motion.li whileHover={{ x: 5 }}>
               <Link>Cookies</Link>
             </motion.li>
-          </ul>
+          </ul> */}
           
         </div>
       </div>
@@ -56,7 +56,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Kool. All rights reserved
         </p>
         {/* Footer social links */}
-        <ul className="flex justify-center gap-6 text-xl">
+        {/* <ul className="flex justify-center gap-6 text-xl">
           <motion.li
             className="border border-primary p-1 rounded-full hover:text-gray-500"
             whileHover={{ y: -4 }}
@@ -90,7 +90,7 @@ const Footer = () => {
               <AiFillLinkedin />
             </a>
           </motion.li>
-        </ul>
+        </ul> */}
       </div>
     </footer>
   );
