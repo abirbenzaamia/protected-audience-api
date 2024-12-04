@@ -26,13 +26,16 @@ const Footer = () => {
           <ul className="flex flex-col gap-2 font-semibold mx-8 items-center md:items-start">
             <li className="text-gray-700 text-sm text-bold mb-2">Navigate</li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Home</Link>
+              <Link to={""} >Home</Link>
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Recipes</Link>
+              <Link to={"recipe"} >Recipes</Link>
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Contact</Link>
+              <Link to={"blog"} >Blogs</Link>
+            </motion.li>
+            <motion.li whileHover={{ x: 5 }}>
+              <Link to={"contact"} >Contact</Link>
             </motion.li>
           </ul>
           {/* <ul className="flex flex-col gap-2 font-semibold mx-8 items-center md:items-start">

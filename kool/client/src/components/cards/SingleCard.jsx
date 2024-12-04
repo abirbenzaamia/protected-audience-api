@@ -96,13 +96,13 @@ const SingleCard = ({ singleData, type }) => {
             {singleData?.description.substring(0, 100)}...
           </p>
           {/* Card rating */}
-          {type === "recipe" && (
+          {/* {type === "recipe" && (
             <Rating
               value={averageRating}
               readOnly
               size={"medium"}
             />
-          )}
+          )} */}
         </div>
       </div>
       {/* Read more link */}

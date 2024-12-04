@@ -24,7 +24,7 @@ const Blogs = () => {
         <AllCards
           mainTitle={"Explore our Culinary Insights"}
           tagline={
-            "Embark on a flavorful journey with our delightful blog posts!"
+            "Embark on a flavorful journey with our delightful blog posts for food from around the world !"
           }
           type={"blog"}
           data={data}

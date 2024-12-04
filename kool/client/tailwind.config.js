@@ -10,7 +10,7 @@ export default {
       },
       backgroundImage: {
         login:
-          "url('https://images.pexels.com/photos/2454533/pexels-photo-2454533.jpeg?auto=compress&cs=tinysrgb&w=720&dpr=1')",
+          "url('https://i.pinimg.com/736x/95/24/3f/95243f7068b90b213d532d9d2f22552a.jpg')",
         hero: "url('https://images.pexels.com/photos/8978878/pexels-photo-8978878.jpeg')",
       },
     },
