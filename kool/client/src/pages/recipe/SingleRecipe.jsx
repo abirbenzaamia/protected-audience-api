@@ -298,7 +298,7 @@ const SingleRecipe = () => {
             </>
           )}
           {/* Recipe comment form */}
-          <div className="my-10 w-full sm:w-2/3 md:w-1/2 mx-auto flex flex-col gap-6">
+          {/* <div className="my-10 w-full sm:w-2/3 md:w-1/2 mx-auto flex flex-col gap-6">
             <h3 className="font-bold text-2xl">Leave a Reply</h3>
             <form
               className="flex flex-col gap-4"
@@ -348,10 +348,10 @@ const SingleRecipe = () => {
                 loading={isLoading}
               />
             </form>
-          </div>
-          <hr />
+          </div> */}
+          {/* <hr /> */}
           {/* Recipe comments */}
-          <div className="w-full sm:w-4/5 mx-auto flex flex-col gap-6">
+          {/* <div className="w-full sm:w-4/5 mx-auto flex flex-col gap-6">
             <h3 className="font-bold text-2xl">Comments</h3>
             {data?.comments?.length ? (
               <div className="flex flex-col gap-6">
@@ -367,7 +367,7 @@ const SingleRecipe = () => {
             ) : (
               <NoData text={"Comments"} />
             )}
-          </div>
+          </div> */}
         </section>
       )}
     </>
