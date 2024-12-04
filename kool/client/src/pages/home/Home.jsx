@@ -1,10 +1,11 @@
 import { Hero, HomeCategories } from "../../components";
 import { useGetRecipesQuery } from "../../features/recipe/recipeApiSlice";
+import { useGetBlogsQuery } from "../../features/blog/blogApiSlice";
 
 
 const Home = () => {
   const recipes = useGetRecipesQuery();
-
+  const blogs = useGetBlogsQuery();
   return (
     <>
       <Hero />
@@ -13,7 +14,12 @@ const Home = () => {
         data={recipes?.data}
         isLoading={recipes?.isLoading}
       />
-      
+       <HomeCategories
+        title={"blog"}
+        data={blogs?.data}
+        isLoading={blogs?.isLoading}
+      />
+
     </>
   );
 };

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Logo, Menu, Avatar } from "..";
+import { Logo, Button, Menu, Avatar } from "..";
 import { Link, NavLink } from "react-router-dom";
-import { FiMenu } from "react-icons/fi";
+import { FiLogIn, FiMenu } from "react-icons/fi";
 import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
@@ -42,7 +42,14 @@ const Header = () => {
                 Recipes
               </NavLink>
             </li>
-            
+            <li>
+              <NavLink
+                to={"/blog"}
+                className="relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center font-semibold text-gray-600"
+              >
+                Blogs
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to={"/contact"}
@@ -61,7 +68,11 @@ const Header = () => {
             to={"/auth/signin"}
             className="hidden md:block"
           >
-            
+            <Button
+              content={"Sign In"}
+              customCss={"max-w-max rounded-full"}
+              icon={<FiLogIn />}
+            />
           </Link>
         )}
         {/* Menu button */}
