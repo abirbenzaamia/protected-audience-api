@@ -14,6 +14,18 @@ const Home = () => {
         data={recipes?.data}
         isLoading={recipes?.isLoading}
       />
+      {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4972165070846072"
+     crossorigin="anonymous"></script>
+      <!-- home-ad -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4972165070846072"
+           data-ad-slot="2083794390"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script> */}
        <HomeCategories
         title={"blog"}
         data={blogs?.data}
