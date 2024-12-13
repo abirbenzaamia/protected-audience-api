@@ -12,7 +12,7 @@ export default {
       backgroundImage: {
         login:
           "url('https://i.pinimg.com/736x/95/24/3f/95243f7068b90b213d532d9d2f22552a.jpg')",
-        hero: "url('https://images.pexels.com/photos/8978878/pexels-photo-8978878.jpeg')",
+        hero: "url('https://i.pinimg.com/736x/37/95/98/37959802c6383e9e6e938efc87c36b44.jpg')",
       },
     },
   },
