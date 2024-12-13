@@ -9,8 +9,8 @@ const Hero = () => {
       <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
       Savor. Inspire. Repeat. 
         </div>
-        <h2 className="font-bold text-3xl md:text-5xl text-center md:text-start">
-          Welcome to <span className="text-primary">Kool</span>
+        <h2 className="font-bold text-2xl md:text-4xl text-center md:text-start">
+          Welcome to <span className="text-primary">GreenSandbox</span>
         </h2>
         <p className="text-gray-600 text-center md:text-start">
 

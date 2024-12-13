@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="border-b-4 border-primary bg-orange-100 pt-12 mt-24">
+    <footer className="border-b-4 border-primary bg-bgfooter pt-12 mt-24">
       {/* Footer top */}
-      <div className="box flex flex-col md:flex-row justify-between border-b-2 border-orange-200 pb-10 gap-8">
+      <div className="box flex flex-col md:flex-row justify-between border-b-2 border-primary pb-10 gap-8">
         {/* Footer top left */}
         <div className="basis-1/2 flex flex-col gap-6 items-center md:items-start text-center md:text-start">
           <Logo />
